@@ -1,0 +1,361 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hey", "Is anyone there?", "Hi there", "Hello", "Hey there", "Howdy", "Hola", "Bonjour", "Konnichiwa", "Guten tag", "Ola"],
+      "responses": [
+        "Hello and welcome to Kabarak University! How are you doing today?",
+        "Hi there! At Kabarak University, we're excited to connect with you. How can we assist you?",
+        "Greetings! Is there anything specific you'd like to know about Kabarak University?",
+        "Jambo! Welcome to Kabarak University. How can I help you today?",
+        "Hello there! Great to have you with us at Kabarak University. What can we do for you?",
+        "Karibu! Hey there, at Kabarak University, we're here to help. What brings you here today?",
+        "Howdy! Welcome to Kabarak University. How can we make your day better?",
+        "Hola! At Kabarak University, we're ready to assist you. What can we do for you?",
+        "Bonjour! Greetings from Kabarak University. How may we assist you today?",
+        "Konnichiwa! Welcome to Kabarak University. How can we make your experience better?",
+        "Guten tag! At Kabarak University, we're here to help you. What brings you here today?",
+        "Ola! Hello from Kabarak University. How can we assist you during your time with us?"
+      ]
+    },
+    
+    {
+      "tag": "Good morning",
+      "patterns": ["GOOD MORNING"],
+      "responses": ["Good morning!. How are you this morning?"]
+    },
+    {
+      "tag": "Good afternoon",
+      "patterns": ["GOOD Afternoon"],
+      "responses": ["Good afternoon. How are you today?"]
+    },
+    {
+      "tag": "Evening",
+      "patterns": ["Good evening"],
+      "responses": ["Good evening. How has your day been?"]
+    },
+    {
+      "tag": "night",
+      "patterns": ["Good night"],
+      "responses": ["Good night. Get some proper sleep", "Good night. Sweet dreams."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Au revoir", "Sayonara", "ok bye", "Bye then", "Fare thee well"],
+      "responses": ["See you later.", "Have a nice day.", "Bye! Come back again.", "I'll see you soon."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help", "Than you very much"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {
+      "tag": "university_info",
+      "patterns": ["Tell me about Kabarak University.", "What can you tell me about Kabarak?", "Give me information about the university."],
+      "responses": ["Kabarak University is a leading educational institution known for its commitment to academic excellence and values-based education. Situated on a spacious 600-hectare campus, the university offers a wide range of programs in various fields. Whether you're interested in arts, sciences, business, or other disciplines, Kabarak University provides a conducive environment for learning and personal growth. We also focus on character development and values, providing a holistic education that goes beyond academics."]
+    },
+    {
+      "tag": "no-response",
+      "patterns": [""],
+      "responses": ["Sorry, I didn't understand you.",  "I'm not sure what you're trying to say.", "Could you please provide more context?","I didn't understand that. Can you rephrase your question?", "Sorry, I couldn't comprehend your message.", "Please enter a meaningful message.", "Not sure I understand that.", "Will you kindly repeat that?."]
+    },
+    {
+      "tag": "neutral-response",
+      "patterns": ["nothing much"],
+      "responses": ["Oh I see. Do you want to talk about something?"]
+    },
+    {
+      "tag": "options",
+      "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+      "responses": ["I can guide you through issues related to Moodle, Zoom, Respondus, Email and Portal", "Offering support for diverse issues relating to Moodle, Zoom, Respondus, Email and Portal"],
+      "context": [""]
+   },
+    {
+      "tag": "university_location",
+      "patterns": ["Where is Kabarak University located?", "Tell me about the university's campus.", "Location of Kabarak University."],
+      "responses": ["Kabarak University is situated on a sprawling 600-hectare piece of land that was generously provided by His Excellency Daniel arap Moi, Kenya's second President. The university shares this campus with Kabarak Primary School and Kabarak High School. Additionally, Kabarak University has branch campuses, including the town campus in Nakuru, which allows students to access quality education in a convenient location."]
+    },
+    {
+      "tag": "blended_learning",
+      "patterns": ["Tell me about the learning programs at Kabarak University.", "Do you offer blended learning?", "What types of courses can I study at Kabarak?"],
+      "responses": ["Kabarak University is proud to offer a variety of learning programs, including blended learning options. This means you can choose a learning format that suits your needs, whether it's traditional classroom-based education or a mix of online and on-campus classes. Additionally, the university provides master's and Ph.D. programs in various fields, ensuring that students have opportunities for advanced studies in their areas of interest."]
+    },
+
+   {
+      "tag": "hours",
+      "patterns": ["What hours are you open?", "What are your hours?", "When are you available?" ],
+      "responses": ["We're open every week day 8am-5pm", "Our hours are 8am-5pm for week days"],
+      "context": [""]
+  },
+  {
+      "tag": "respondus",
+      "patterns": ["What is lockdown-browser?", "Why lockdown browser?", "What is respondus?"],
+      "responses": ["LockDown Browser® is a custom browser that locks down the testing environment within a learning management system.", "LockDown Browser is the “gold standard” for securing online exams in classrooms or proctored environments."],
+    "context":[""]
+},
+{
+      "tag": "moodle_login",
+      "patterns": ["I cannot login to moodle", "my moodle is not working"],
+      "responses": ["Please reset your password and check your school email"],
+      "context": [""]
+},
+    {
+      "tag": "skill",
+      "patterns": ["What can you do?"],
+      "responses": ["I can provide general resposes regarding kabarak university, answer questions related to the school questions and comments. Do not consider me as a substitute for an actual person."]
+    },
+    {
+      "tag": "creation",
+      "patterns": ["Who created you?", "How were you made?", "How were you created?"],
+      "responses": ["I was created by >.", "I was trained on a text dataset using Deep Learning & Natural Language Processing techniques", "The real question is: Who created you?"]
+    },
+    {
+      "tag": "name",
+      "patterns": ["My name is ", "I am name.", "I go by "],
+      "responses": ["Oh nice to meet you. Tell me how was your week?", "Nice to meet you. So tell me. How do you feel today?", "That's a great name. Tell me more about yourself."]
+    },
+    {
+      "tag": "requirement",
+      "patterns": ["What are the admission requirements?"],
+      "responses": ["You need a GPA of 3.0 or higher."]
+    },
+    {
+      "tag": "courses",
+      "patterns": ["Tell me about the available courses."],
+      "responses": ["We offer various courses in arts, science, and more."]
+    },
+    {
+      "tag": "application date",
+      "patterns": ["What is the application deadline for this semester?"],
+      "responses": ["The application deadline is [jan-april]."]
+    },
+    {
+      "tag": "scholarship",
+      "patterns": ["Are there scholarships available?"],
+      "responses": ["Yes, we offer a range of scholarships for eligible students."]
+    },
+    {
+      "tag": "faculty",
+      "patterns": ["Tell me about the faculty."],
+      "responses": ["Our faculty is comprised of experienced professionals in various fields."]
+    },
+    {
+      "tag": "admission page",
+      "patterns": ["How can I apply for admission?"],
+      "responses": ["To apply for admission, visit our admissions page on our website and complete the online application form."]
+    },
+     {
+      "tag": "sports",
+      "patterns": ["Tell me about sports at Kabarak University.", "What sports are available?", "Sports facilities at the university."],
+      "responses": ["Kabarak University offers a variety of sports activities, including football, basketball, volleyball, and athletics. We have well-maintained sports facilities for students to enjoy and stay active."]
+    },
+    {
+      "tag": "counseling",
+      "patterns": ["Tell me about counseling services.", "Do you offer counseling?", "How can I access counseling?"],
+      "responses": ["Kabarak University provides counseling services to support the mental and emotional well-being of our students. You can access counseling by contacting the university counseling center or visiting our website for more information."]
+    },
+    {
+      "tag": "christian_union",
+      "patterns": ["What is the Christian Union at Kabarak University?", "Tell me about CU activities.", "Christian Union events."],
+      "responses": ["The Christian Union (CU) at Kabarak University is a vibrant community of students who come together for spiritual growth and fellowship. They organize various events, including worship sessions, prayer meetings, and community service activities. It's a great way to connect with like-minded individuals."]
+    },
+    {
+      "tag": "school_infrastructure",
+      "patterns": ["Tell me about the university's infrastructure.", "What is the campus like?", "Facilities at Kabarak University."],
+      "responses": ["Kabarak University boasts modern infrastructure, including well-equipped classrooms, libraries, laboratories, and state-of-the-art technology. Our campus is designed to provide a conducive environment for learning and research. We also have recreational areas and green spaces for students to relax and socialize."]
+    },
+    {
+      "tag": "documents",
+      "patterns": ["What documents do I need to submit with my application?"],
+      "responses": ["You'll need to submit your previous school transcripts,Birth certificate letters of recommendation,KCPE certificate and a personal statement."]
+    },
+    {
+      "tag": "fee",
+      "patterns": ["Is there an application fee?"],
+      "responses": ["Yes, there is an application fee of [amount]."]
+    },
+    
+      {
+          "tag": "finance_contact",
+          "patterns": ["finance contact", "finance department", "financial services contact"],
+          "responses": [
+              "For finance-related inquiries, please contact our Finance Department.",
+              "If you have questions about finances, reach out to our Finance Department for assistance."
+          ],
+    "contact_info": {
+      "email": "finance@university.edu",
+      "phone": "+123-456-7890"
+  }
+},
+{
+  "tag": "procurement_contact",
+  "patterns": ["procurement contact", "procurement department", "purchase inquiries"],
+  "responses": [
+      "For procurement and purchase-related inquiries, please contact our Procurement Department.",
+      "Need assistance with procurement? Reach out to our Procurement Department for support."
+  ],
+  "contact_info": {
+      "email": "procurement@university.edu",
+      "phone": "+123-456-7891"
+  }
+},
+  {
+      "tag": "interview",
+      "patterns": ["What is the admission interview process like?"],
+      "responses": ["The admission interview typically involves a discussion about your academic background and goals."]
+    },
+    {
+          "tag": "financial_requirements",
+          "patterns": ["financial requirements", "tuition costs", "program fees"],
+          "responses": [
+              "To attend our university, you'll need to cover tuition costs, which vary based on your program. Visit our website https://kabarak.ac.ke/ for more detailed information on tuition and fees.",
+              "Financial requirements depend on the program you choose. Check our official website for up-to-date information on tuition and associated fees."
+          ]
+     },
+     {
+      "tag": "financial_requirements",
+      "patterns": ["financial requirements", "tuition costs", "program fees"],
+      "responses": [
+          "To attend our university, you'll need to cover tuition costs, which vary based on your program. Visit our website for detailed information on tuition and fees.",
+          "Financial requirements depend on the program you choose. Check our official website for up-to-date information on tuition and associated fees."
+      ]
+  },
+  {
+      "tag": "payment_plans",
+      "patterns": ["payment plans", "installments", "paying tuition"],
+      "responses": [
+          "We offer flexible payment plans, allowing you to pay tuition in installments. Contact our financial services office for assistance in setting up a suitable payment arrangement."
+      ]
+  },
+  {
+      "tag": "work_study_programs",
+      "patterns": ["work-study programs", "on-campus employment", "financial assistance"],
+      "responses": [
+          "Explore our work-study programs, providing part-time on-campus employment opportunities. These programs help students cover expenses while gaining valuable work experience. Connect with our career services for details."
+      ]
+  },
+  {
+      "tag": "refund_policies",
+      "patterns": ["refund policies", "withdraw from course", "tuition refund"],
+      "responses": [
+          "It's important to familiarize yourself with our refund policies, especially if you need to withdraw from a course or the university. Our policies are in place to guide you on potential tuition and fee refunds based on the timing of withdrawal."
+      ]
+  },
+  {
+      "tag": "international_student_support",
+      "patterns": ["international student support", "scholarships for international students", "financial aid for international students"],
+      "responses": [
+          "International students may qualify for specific scholarships or financial aid. Visit our international student services office to explore available financial support options tailored to your needs."
+      ]
+  },
+  {
+      "tag": "financial_literacy_resources",
+      "patterns": ["financial literacy resources", "budgeting workshops", "financial planning"],
+      "responses": [
+          "We provide resources and counseling services to enhance your financial literacy. Workshops on budgeting and financial planning are available to help you manage your finances effectively. Check our student services for upcoming events."
+      ]
+  },
+  {
+      "tag": "cost_of_living",
+      "patterns": ["cost of living", "average living expenses", "housing expenses"],
+      "responses": [
+          "Understanding the average cost of living in the area is essential for effective budgeting. Consider expenses such as housing, transportation, and daily necessities to gauge the overall financial impact."
+      ]
+  },
+  {
+      "tag": "paid_internships",
+      "patterns": ["paid internships", "cooperative education experiences", "work experience"],
+      "responses": [
+          "Certain programs offer paid internships or cooperative education experiences, allowing you to gain practical work experience while contributing to your financial well-being. Explore these opportunities within your specific field of study."
+      ]
+  },
+  {
+      "tag": "late_financial_aid_applications",
+      "patterns": ["late financial aid applications", "apply for financial aid after admission"],
+      "responses": [
+          "In some cases, you may apply for financial aid or scholarships even after being admitted. Connect with our financial aid office for information on deadlines and application requirements."
+      ]
+  },
+  {
+      "tag": "early_payment_incentives",
+      "patterns": ["early payment incentives", "tuition discounts", "benefits of early payment"],
+      "responses": [
+          "We provide incentives for early tuition payment, such as discounts. Inquire about potential benefits associated with timely payments to optimize your financial planning."
+      ]
+  },
+  {
+      "tag": "financial_support_in_difficulties",
+      "patterns": ["financial support in difficulties", "emergency funds", "financial counseling"],
+      "responses": [
+          "Our university has support systems in place to assist students facing financial difficulties. Emergency funds, financial counseling, and resources are available to help you navigate unexpected challenges. Reach out to our student services or financial aid office for assistance."
+      ]
+  },
+  {
+      "tag": "admission_requirements",
+      "patterns": ["admission requirements", "requirements for attending", "enrollment criteria"],
+      "responses": [
+          "To attend our university, you will need to cover tuition costs, which vary based on your program. Additionally, be aware of other potential fees for services and facilities. Check our official website for detailed information on tuition and fees."
+      ]
+  },
+  {
+      "tag": "payment_plans_additional",
+      "patterns": ["payment plans additional", "flexible payment options", "manageable financial commitment"],
+      "responses": [
+          "We offer flexible payment plans, allowing you to pay tuition in installments. This can help make the financial commitment more manageable. Reach out to our financial services office for assistance in setting up a suitable payment arrangement."
+      ]
+  },
+     {
+          "tag": "payment_plans",
+          "patterns": ["payment plans", "installments", "paying tuition"],
+          "responses": [
+              "We offer flexible payment plans, allowing you to pay tuition in installments. Contact our financial services office for assistance in setting up a suitable payment arrangement."
+          ]
+      },
+      {
+          "tag": "work_study_programs",
+          "patterns": ["work-study programs", "on-campus employment", "financial assistance"],
+          "responses": [
+              "Explore our work-study programs, providing part-time on-campus employment opportunities. These programs help students cover expenses while gaining valuable work experience. Connect with our career services for details."
+          ]
+        },
+  
+    {
+      "tag": "courses",
+      "patterns": [
+        "What courses does Kabarak offer?",
+        "Tell me about the available courses.",
+        "List of courses at Kabarak University."
+      ],
+      "responses": [
+        "Kabarak University offers a wide range of courses in various fields including Arts, Science, Business, Medicine, and more.",
+        "We have a diverse selection of courses, from humanities to sciences. Is there a specific course you're interested in?",
+        "Our course offerings include undergraduate and postgraduate programs in various disciplines. Is there a specific department you'd like to know more about?"
+      ]
+    },
+    {
+      "tag": "school_discipline",
+       "patterns": ["Tell me about school discipline.", "How does the school handle discipline?", "Discipline at Kabarak University."],
+       "responses": ["Kabarak University maintains a strong commitment to discipline and ethics. We have clear guidelines and policies in place to ensure a respectful and harmonious learning environment. Our approach to discipline is based on fairness and respect for all students and staff. We believe that a disciplined atmosphere contributes to a positive educational experience."]
+       },
+     {
+          "tag": "biblical_perspective",
+          "patterns": ["How does the school incorporate a biblical perspective into education?", "Tell me about biblical values at Kabarak University.", "Faith-based education at Kabarak."],
+          "responses": ["Kabarak University provides education with a strong emphasis on biblical values. We integrate biblical principles into our curriculum and encourage students to explore their faith. Chapel services, Bible studies, and Christian ethics are an integral part of our educational approach. We believe that a biblical perspective enriches the overall learning experience and helps students grow in character and spirituality."]
+        },
+       {
+      "tag": "course_details",
+      "patterns": [
+        "Tell me more about health sciences?.",
+        "What can you tell me about the computer science program?.",
+        "I'm interested in education course."
+      ],
+      "responses": [
+        "The health and science program at Kabarak University is designed to provide in-depth knowledge and skills in that field. It covers topics such as [pharmaceuticals].",
+        "Sure, I can provide information about the [clinical medicine,nursing and pharmacy] programs. It's a [course_duration] program that includes courses like [course_subjects].",
+        "The [clinical medicine] program is a popular choice among students. It includes courses in [] and prepares students for [course_careers]."
+      ]
+    }
+ 
+   ]
+   
+}
